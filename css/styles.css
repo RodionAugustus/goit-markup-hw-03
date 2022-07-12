@@ -51,6 +51,8 @@ address {
     font-style: normal;
 }
 
+/* general settings */
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
@@ -63,62 +65,39 @@ ul {
     padding: 0;
 }
 
-.studio-content > *, .portfolio-list > * {
-    padding-left: 215px;
+.container {
+    width: 1200px;
+    margin: auto;
 }
 
-.footer {
-    padding-left: 215px;
-}
+/* header-section */
 
 .header {
-    padding: 24px 215px 25px;
     border-bottom: 1px solid #ECECEC;
 }
 
-.header * {
-   display: inline-block;
-   text-decoration: none;
-   vertical-align: center;
-}
-
-.nav-link:hover {
-    color: var(--brand-color);
-}
-
-.nav-line {
-    font-weight: 500;
-}
-
-.logo .studio {
-    color: #000;
-}
-
-.navigation .nav-link {
-    margin-right: 50px;
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-.header-contact {
-    color: #757575;
-    margin-right: 50px;
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation {
-    margin-right: 281px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.nav-line {
+    display: inline-block;
+    font-weight: 500;
+    margin-left: 50px;
+}
 
-.logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    color: var(--brand-color);
+.navigation .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
     text-decoration: none;
-    height: 31px;
-    margin-right: 93px;
 }
 
 .studio-link {
@@ -129,11 +108,40 @@ ul {
     accent-color: var(--brand-color);
 }
 
+.nav-link:hover {
+    color: var(--brand-color);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--brand-color);
+    text-decoration: none;
+    margin-right: 43px;
+}
+
+.logo .studio {
+    color: #000;
+}
+
+.header-contact {
+    color: #757575;
+    text-decoration: none;
+}
+
+
+/* offer-section */
+
 .offer {
-    padding: 200px 452px;
     text-align: center;
     background-color: #2F303A;
     color: #fff;
+}
+
+.offer .container {
+    padding: 200px 237px;
 }
 
 .main-title {
@@ -157,15 +165,26 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* about-us section */
+
 .about-us {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+.about-us-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-title {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
 
 .about-us-text-box {
     display: inline-block;
-    margin-right: 30px;
     width: 270px;
 }
 
@@ -181,9 +200,7 @@ ul {
     line-height: 24px;
 }
 
-.about-us-title {
-    visibility: hidden;
-}
+/* what-we-do section */
 
 .section-title {
     font-weight: 700;
@@ -197,14 +214,15 @@ ul {
 }
 
 .what-we-do-images {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .what-we-do-image {
     display: inline-block;
-    margin: auto 30px;
 }
+
+/* our-team section */
 
 .our-team {
     background-color: #F5F4FA;
@@ -212,9 +230,13 @@ ul {
     padding-bottom: 94px;
 }
 
+.team-members {
+    display: flex;
+    justify-content: space-between;
+}
+
 .team-member {
     display: inline-block;
-    margin: auto 30px;
     padding-bottom: 30px;
     text-align: center;
     background-color: #fff;
@@ -235,6 +257,8 @@ ul {
     color: #757575;
     font-size: 16px;
 }
+
+/* footer section */
 
 .footer {
     background-color: #2F303A;
@@ -277,13 +301,15 @@ ul {
 .portfolio-list {
     padding-top: 94px;
     padding-bottom: 94px;
-    padding-right: 215px;
 }
 
+/* filters menu */
+
 .filters-list {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     list-style: none;
-    padding-left: 495px;
     margin-bottom: 50px;
 }
 
@@ -309,11 +335,18 @@ ul {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* projects list */
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .project-item {
     border: 1px solid #EEEEEE;
     display: inline-block;
     list-style: none;
-    margin-right: 30px;
     margin-bottom: 30px;
 }
 
