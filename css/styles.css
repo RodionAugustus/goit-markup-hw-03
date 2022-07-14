@@ -79,15 +79,17 @@ ul {
 /* header-section */
 
 .header {
-    height: 80px;
     border-bottom: 1px solid #ECECEC;
     display: flex;
     vertical-align: middle;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header .container {
     display: flex;
     justify-content: space-between;
+    line-height: 0px;
 }
 
 .navigation {
@@ -184,7 +186,7 @@ ul {
 /* about-us section */
 
 .about-us {
-    padding-bottom: 47px;
+    padding-bottom: 0px;
 }
 
 .about-us-text {
@@ -225,7 +227,7 @@ ul {
 }
 
 .what-we-do {
-    padding-top: 47px;
+    padding-top: 94px;
 }
 
 .what-we-do-images {
@@ -337,12 +339,12 @@ ul {
     border-radius: 4px;
     border: none;
     color: #212121;
-    height: 38px;
     font-size: 16px;
     font-weight: 500;
     padding: 6px 22px;
     text-align: center;
     vertical-align: middle;
+    line-height: 26px;
 }
 
 .filter-button:hover {
@@ -371,7 +373,7 @@ ul {
 
 .project-text {
     border: 1px solid #EEEEEE;
-    padding: 20px 24px;
+    padding: 19px 24px;
     max-width: 370px;
 }
 
@@ -389,4 +391,6 @@ ul {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
